@@ -10,3 +10,12 @@ function add() {
   adding_window = false
 }
 }
+
+function create_elements() {
+  var container = document.createElement("div")
+  var tickbox = document.createElement("div")
+  var text = document.createElement("div")
+  container.class = "container";
+  tickbox.class = "tickbox";
+  text.class = "todo-text";
+}
