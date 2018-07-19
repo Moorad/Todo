@@ -11,6 +11,8 @@ function add() {
 }
 }
 
+create_elements();
+
 function create_elements() {
   var container = document.createElement("div")
   var tickbox = document.createElement("div")
