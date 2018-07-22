@@ -39,9 +39,9 @@ h2 {
   margin:5px 5px;
 }
 
-#add_button {
-  width:40px;
-  height:40px;
+#plus {
+  width:30px;
+  height:30px;
   margin:7.5px 15px;
   float:right;
   display:inline-block;
@@ -66,4 +66,77 @@ h2 {
   margin:1%;
   width:70%;
   border:1px solid black;
+}
+
+#new_element_container {
+  position: absolute;
+  width:100%;
+  height:100%;
+
+}
+
+#new_element {
+  margin:50px auto;
+  border:1px solid black;
+  width:800px;
+  background:#FFFFFF;
+  overflow:;
+}
+
+#title_input,#description_input,#add_button{
+  display:block;
+  margin:30px auto 20px auto;
+}
+
+#title_input,#description_input {
+  font-family:Roboto;
+  font-size:20px;
+  padding:10px;
+  width:80%;
+}
+
+#description_input {
+  height:100px;
+  resize:none;
+}
+
+#add_button {
+    font-size:20px;
+    background:white;
+    border:1px solid black;
+    border-radius:3px;
+    padding:5px 10px;
+}
+
+.element_container {
+  margin:20px;
+  height:65px;
+  border:1px solid black;
+  overflow:visible;
+}
+
+.text_container {
+  display:inline-block;
+}
+
+.checkbox {
+  border:1px solid black;
+  width:30px;
+  height:30px;
+  margin:17px 10px;
+  float:left;
+  background:#FFFFFF;
+}
+
+.checkbox img {
+  width:100%;
+}
+
+.title,.description {
+  margin:1px;
+  font-family:Roboto;
+}
+
+.title {
+  font-size:30px;
 }
