@@ -2,26 +2,27 @@
   <head>
     <title>Todo Project</title>
     <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   </head>
   <body>
     <div id="nav">
       <div id="logo">
         <img src="Assets/logo.png" width="50px">
-      </div><div id="logo-text"><h2>Todo Project</h2></div><div id="plus"><img src="Assets/plus.png" width="30px" onclick="add()"></div>
+      </div><div id="logo-text"><h2>Todo Project</h2></div><div id="plus"><img src="Assets/plus.png" width="40px" onclick="add()"></div>
     </div>
     <div id="new_element_container" hidden>
       <div id="new_element">
-        <input type="text" placeholder="What do you want to do?" id="title_input"><br/>
+        <h1 style="text-align:center;font-family:Noto Sans;">New To do</h1>
+        <br/>
+        <input type="text" placeholder="What do you want to do?" id="title_input">
+        <br/>
         <textarea placeholder="Describe how can you check the box off, Any information needed like URLs." id="description_input"></textarea>
         <br/>
         <input type="button" value="Add" onclick="create_element()" id="add_button">
       </div>
     </div>
     <div id="folder_menu"></div>
-    <div id="menu">
-    <div class="element_container"><div class="checkbox" onclick="checkbox_clicked(this)"><img src="Assets/tick.png"></div><div class="text_container"><h1 class="title">Title</h1><p class="description">This is an example description to show how description look like, Go ahead and click on the che</p></div></div>
-    </div>
+    <div id="menu"></div>
     <script src="script.js"></script>
   </body>
 </html>
