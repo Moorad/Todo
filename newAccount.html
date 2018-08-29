@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Tasks: Sign in</title>  
+  <title>Tasks: Create Account</title>
   <link rel="stylesheet" href="sign_in.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
@@ -14,20 +14,19 @@
     storageBucket: "todo-project-10411.appspot.com",
     messagingSenderId: "172924348119"
   };
-  firebase.initializeApp(config);
+    firebase.initializeApp(config);
 </script>
 </head>
 <body>
-  <h1>Sign in</h1>
-  <p>Sign in with your email and password to log in into your account</p>
-  <div id="success">You have logged in successfully</div>
-  <div id="error"><p>...</p></div>
-  <input type="email" id="email_field" placeholder="Email Address">
+  <h1>Create a New Account</h1>
+  <p>Create an account to start using Todo Project, You only need to fill the following fields:</p>
+  <input type="text" placeholder="Username" autocomplete="off">
   <br/>
-  <input type="password" id="password_field" placeholder="Password">
+  <input type="email" placeholder="Email Address" id="email_input" autocomplete="off">
   <br/>
-  <button id="sign_in" onclick="login()">Sign in</button>
-  <a href="newAccount.html"><p>Create a new account.</p></a>
-  <script src="index.js"></script>
+  <input type="password" placeholder="Password" id="password_input" autocomplete="off">
+  <br/>
+  <button onclick="createAccount()">Create an Account</button>
+  <script src="createAccount.js"></script>
 </body>
 </html>
